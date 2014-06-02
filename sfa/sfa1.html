@@ -2,8 +2,11 @@
   <head>
     <title>Stick Figure Adventure</title>
 	<script type="text/javascript">
-	function changeScene (option) {
+	var curScene = 0;
+    
+    function changeScene(option) {
       var message = "";
+      
       if (curScene == 0) {
         curScene = 1;
         message = "Your journey begins at a fork in the road.";
@@ -18,18 +21,52 @@
           message = "You are standing on the bridge overlooking a peaceful steam"
         }
       }
-      // finished here
       else if (curScene == 2) {
         if (option == 1) {
-          curScene = 2;
-          message = "You have arrived at a cute little house in the woods";
+          curScene = 4;
+          message = "A witch is looking trough the window";
           }
         else {
-          curScene = 3;
-          message = "You are standing on the bridge overlooking a peaceful steam"
+          curScene = 5;
+          message = "An old fucking witch ate you";
         }
       }
-      
+      else if (curScene == 3) {
+        if (option == 1) {
+          curScene = 6;
+          message = "Sorry, a troll lives on the other side of the bridge and you" + " just became his lunch.";
+          }
+        else {
+          curScene = 7;
+          message = "You are interrupted by the arrival of a huge troll.";
+        }
+      }
+      else if (curScene == 4) {
+        if (option == 1) {
+          curScene = 8;
+          message = "Shit";
+          // to be continued
+          }
+        else {
+          curScene = 5;
+          message = "An old fucking witch ate you";
+        }
+      }
+      else if (curScene == 7) {
+      curScene = 9
+      message = "shit";
+      // to be continued
+      }
+      else if (curScene == 5) {
+      curScene = 0;
+      }
+      else if (curScene == 6) {
+      curScene = 0;
+      }
+      document.getElementById("sceneimg").src = "scene" + curScene + ".png";
+      if (message != ""){
+        alert(message);
+      }
     }
     </script>
   </head>
@@ -38,8 +75,8 @@
     <div style="margin-top:100px; text-align:center">
       <img id="sceneimg" src="scene0.png" alt="Stick Figure Adventure" /><br />
       Please choose:
-      <input type="button" id="decision1" value="1" onclick="changeScene(1)" />
-      <input type="button" id="decision2" value="2" onclick="changeScene(2)" />
+      <input type="button" id="option1" value="1" onclick="changeScene(1)" />
+      <input type="button" id="option2" value="2" onclick="changeScene(2)" />
     </div>
   </body>
 </html>
