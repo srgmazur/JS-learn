@@ -2,15 +2,79 @@
   <head>
     <title>Stick Figure Adventure</title>
 	<script type="text/javascript">
-	var curScene = 0;
+	// Начальное значение сцены = 0
+    var curScene = 0;
     
     function changeScene(option) {
+      // удаляем описание сцены
       var message = "";
       
+      // Текущая сцена 0 (Введение)
+      switch (curScene) {
+        case 0:
+          curScene = 1;
+          message = "Your journey begins at a fork in the road.";
+          break;
+        case 1:
+          if (option == 1) {
+            curScene = 2;
+            message = "You have arrived at a cute little house in the woods";
+          }
+          else {
+            curScene = 3;
+            message = "You are standing on the bridge overlooking a peaceful steam"
+          }
+          break;
+        case 2:
+          if (option == 1) {
+            curScene = 4;
+            message = "A witch is looking trough the window";
+          }
+          else {
+            curScene = 5;
+            message = "An old fucking witch ate you";
+          }
+          break;
+        case 3:
+          if (option == 1) {
+            curScene = 6;
+            message = "Sorry, a troll lives on the other side of the bridge and you" + " just became his lunch.";
+          }
+          else {
+            curScene = 7;
+            message = "You are interrupted by the arrival of a huge troll.";
+          }
+          break;
+        case 4:
+          if (option == 1) {
+            curScene = 8;
+            message = "Shit";
+            // to be continued
+          }
+          else {
+            curScene = 5;
+            message = "An old fucking witch ate you";
+          }
+          break;
+        case 7:
+          curScene = 9
+          message = "shit";
+          // to be continued
+          break;
+        case 5:
+          curScene = 0;
+          break;
+        case 6:
+          curScene = 0;
+          break;
+      }
+      
+      /*
       if (curScene == 0) {
         curScene = 1;
         message = "Your journey begins at a fork in the road.";
       }
+      // Сцена 1 "на распутье"
       else if (curScene == 1) {
         if (option == 1) {
           curScene = 2;
@@ -21,6 +85,7 @@
           message = "You are standing on the bridge overlooking a peaceful steam"
         }
       }
+      // Перешли на сцену 2
       else if (curScene == 2) {
         if (option == 1) {
           curScene = 4;
@@ -31,6 +96,7 @@
           message = "An old fucking witch ate you";
         }
       }
+      // Перешли на сцену 3
       else if (curScene == 3) {
         if (option == 1) {
           curScene = 6;
@@ -41,6 +107,7 @@
           message = "You are interrupted by the arrival of a huge troll.";
         }
       }
+      // Перешли на сцену 4
       else if (curScene == 4) {
         if (option == 1) {
           curScene = 8;
@@ -52,17 +119,23 @@
           message = "An old fucking witch ate you";
         }
       }
+      // Не законченная сцена 7
       else if (curScene == 7) {
       curScene = 9
       message = "shit";
       // to be continued
       }
+      // переход из тупиковой сцены в нулевую
       else if (curScene == 5) {
       curScene = 0;
       }
+      // переход из тупиковой сцены в нулевую
       else if (curScene == 6) {
       curScene = 0;
       }
+      */
+      
+      // меняем картинку в зависимости от номера сцены
       document.getElementById("sceneimg").src = "scene" + curScene + ".png";
       if (message != ""){
         alert(message);
