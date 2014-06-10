@@ -2,20 +2,22 @@
   <head>
     <title>Mandango - The Macho Movie Ticket Finder</title>
     <script type="text/javascript">
+    var seats = [false, true, false, true, true, true, false, true, false];
+    var selSeat = -1;
     function initSeats() {
-      var seats = [false, true, false, true, true, true, false, true, false];
-        for (var i = 0; i < seats.length; i++){
-          if (seats[i]) {
-            document.getElementById("seat" + i).src = "seat_avail.png";
-            document.getElementById("seat" + i).alt = "Available!";
+      for (var i = 0; i < seats.length; i++){
+        if (seats[i]) {
+          document.getElementById("seat" + i).src = "seat_avail.png";
+          document.getElementById("seat" + i).alt = "Available!";
           }
-          else {
-            document.getElementById("seat" + i).src = "seat_unavail.png";
-            document.getElementById("seat" + i).alt = "UnAvailable!";
+        else {
+          document.getElementById("seat" + i).src = "seat_unavail.png";
+          document.getElementById("seat" + i).alt = "UnAvailable!";
           }
         }
     }
-
+    
+   
     function findSeat() {
     //если место уже выбранно произведите повторную инициализацию
       if (selSeat >= 0){
@@ -25,7 +27,19 @@
       //поиск свободного места среди всех возможных
       for (var i = 0; i < seats.length; i++){
         //проверяем доступность выбранного кресла
-        if ()
+        if (seats[i]) {
+          selSeat = i;
+          document.getElementById("seat" + i).src = "seat_select.png";
+          document.getElementById("seat" + i).alt = "your Place!";
+          //принять предложенный вариант
+          var accept = confirm("Seat " + (i + 1) + " is available. Accept?");
+          if (!accept) {
+            //пользователь отказался, ищем дальше
+            selSeat = -1;
+            document.getElementById("seat" + i).src = "seat_avail.png";
+            document.getElementById("seat" + i).alt = "Available!";
+          }
+        }
       }
     }
     </script>
