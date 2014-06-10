@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Mandango - The Macho Movie Ticket Finder</title>
+    
     <script type="text/javascript">
     var seats = [false, true, false, true, true, true, false, true, false];
     var selSeat = -1;
@@ -27,12 +28,16 @@
       //поиск свободного места среди всех возможных
       for (var i = 0; i < seats.length; i++){
         //проверяем доступность выбранного кресла
-        if (seats[i]) {
+        if (seats[i] && seats[i + 1] && seats[i + 2]) {
           selSeat = i;
           document.getElementById("seat" + i).src = "seat_select.png";
           document.getElementById("seat" + i).alt = "your Place!";
+          document.getElementById("seat" + (i + 1)).src = "seat_select.png";
+          document.getElementById("seat" + (i + 1)).alt = "your Place!";
+          document.getElementById("seat" + (i + 2)).src = "seat_select.png";
+          document.getElementById("seat" + (i + 2)).alt = "your Place!";
           //принять предложенный вариант
-          var accept = confirm("Seat " + (i + 1) + " is available. Accept?");
+          var accept = confirm("Seat " + (i + 1) +  " through " + (i + 3) + " is available. Accept?");
             if (accept) {
               break;
             }
@@ -41,6 +46,10 @@
               selSeat = -1;
               document.getElementById("seat" + i).src = "seat_avail.png";
               document.getElementById("seat" + i).alt = "Available!";
+              document.getElementById("seat" + (i + 1)).src = "seat_avail.png";
+              document.getElementById("seat" + (i + 1)).alt = "Available!";
+              document.getElementById("seat" + (i + 2)).src = "seat_avail.png";
+              document.getElementById("seat" + (i + 2)).alt = "Available!";
             }
         }
       }
