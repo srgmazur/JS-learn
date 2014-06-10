@@ -3,7 +3,46 @@
     <title>Mandango - The Macho Movie Ticket Finder</title>
 
     <script type="text/javascript">
+    function initSeats() {
+      var seats = [false, true, false, true, true, true, false, true, false];
+     /*var seat2 = true;
+     var seat3 = false;
+     var seat4 = true;
+     var seat5 = true;
+     var seat6 = true;
+     var seat7 = false;
+     var seat8 = false;
+     var seat9 = false;*/
      
+        for (var i = 0; i < seats.length; i++){
+          if (seats[i]) {
+            document.getElementById("seat" + i).src = "seat_avail.png";
+            document.getElementById("seat" + i).alt = "Available!";
+          }
+          else {
+            document.getElementById("seat" + i).src = "seat_unavail.png";
+            document.getElementById("seat" + i).alt = "UnAvailable!";
+          
+          }
+          /*if (seat[i])
+            alert("Seat" + i + " is available")
+          else
+            alert("Seat" + i + " is not available")*/
+        }
+    }
+    function findSeat() {
+    //если место уже выбранно произведите повторную инициализацию
+      if (selSeat >= 0){
+        selSeat = -1;
+        initSeats();
+      }
+      //поиск свободного места среди всех возможных
+      for (var i = 0; i < seats.length; i++){
+        //проверяем доступность выбранного кресла
+        if ()
+      }
+      
+    }
     </script>
   </head>
 
