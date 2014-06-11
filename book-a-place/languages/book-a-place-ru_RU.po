@@ -5,10 +5,10 @@ msgstr ""
 "Project-Id-Version: Book a Place 0.4.2\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/plugins/plugin-name\n"
 "POT-Creation-Date: 2014-05-20 15:56+0200\n"
-"PO-Revision-Date: 2014-06-11 22:50+0200\n"
+"PO-Revision-Date: 2014-06-11 23:26+0200\n"
 "Last-Translator: Sergey Mazur <srgmazur@gmail.com>\n"
 "Language-Team: LANGUAGE <translations@example.com >\n"
-"Language: en_US\n"
+"Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -172,7 +172,7 @@ msgstr ""
 
 #: class-book-a-place.php:2177
 msgid "Start"
-msgstr ""
+msgstr "Начало"
 
 #: class-book-a-place.php:2177
 msgid "End"
@@ -180,7 +180,7 @@ msgstr ""
 
 #: class-book-a-place.php:2284
 msgid "Please wait..."
-msgstr ""
+msgstr "Пожалуйста подождите..."
 
 #: class-book-a-place.php:2286 views/admin-events.php:36
 #: views/admin-events.php:99 views/admin-orders-view.php:119
@@ -243,7 +243,7 @@ msgstr ""
 
 #: views/admin-events.php:369
 msgid "Scheme"
-msgstr ""
+msgstr "Схема"
 
 #: views/admin-events.php:375 views/admin-schemes-view.php:8
 #: views/includes/admin-schemes-form.php:29

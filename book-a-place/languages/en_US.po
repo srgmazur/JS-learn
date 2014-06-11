@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Book a Place 0.4.2\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/plugins/plugin-name\n"
 "POT-Creation-Date: 2014-05-20 15:56+0200\n"
-"PO-Revision-Date: 2014-06-11 22:50+0200\n"
+"PO-Revision-Date: 2014-06-11 22:58+0200\n"
 "Last-Translator: Sergey Mazur <srgmazur@gmail.com>\n"
 "Language-Team: LANGUAGE <translations@example.com >\n"
 "Language: en_US\n"
@@ -21,117 +21,117 @@ msgstr ""
 
 #: class-book-a-place.php:121
 msgid "Available"
-msgstr "Свободно"
+msgstr ""
 
 #: class-book-a-place.php:122
 msgid "Booked"
-msgstr "Забронированно"
+msgstr ""
 
 #: class-book-a-place.php:123
 msgid "In cart"
-msgstr "В корзине"
+msgstr ""
 
 #: class-book-a-place.php:124
 msgid "In other's cart"
-msgstr "В чужой корзине"
+msgstr ""
 
 #: class-book-a-place.php:125
 msgid "Unavailable"
-msgstr "Недоступно"
+msgstr ""
 
 #: class-book-a-place.php:129
 msgid "Not defined"
-msgstr "Не определено"
+msgstr ""
 
 #: class-book-a-place.php:130 views/admin-schemes-view.php:35
 msgid "Set"
-msgstr "Выбрано"
+msgstr ""
 
 #: class-book-a-place.php:131
 msgid "Paid"
-msgstr "Оплачено"
+msgstr ""
 
 #: class-book-a-place.php:132
 msgid "Cancelled"
-msgstr "Отменено"
+msgstr ""
 
 #: class-book-a-place.php:136
 msgid "Places has been successfully booked."
-msgstr "Места были удачно забронированы"
+msgstr ""
 
 #: class-book-a-place.php:140
 msgid "Error. Places has not been booked."
-msgstr "Ошибка. Места не были забронированы"
+msgstr ""
 
 #: class-book-a-place.php:504
 msgid "Book a Place"
-msgstr "Забронировать место"
+msgstr ""
 
 #: class-book-a-place.php:509
 msgid "Schemes"
-msgstr "Схемы"
+msgstr ""
 
 #: class-book-a-place.php:513
 msgid "Events"
-msgstr "События"
+msgstr ""
 
 #: class-book-a-place.php:517
 msgid "Orders"
-msgstr "Заказы"
+msgstr ""
 
 #: class-book-a-place.php:525
 msgid "Settings"
-msgstr "Настройки"
+msgstr ""
 
 #: class-book-a-place.php:871 class-book-a-place.php:968
 #: views/admin-orders-list.php:185 views/admin-orders-list.php:222
 #: views/admin-orders-view.php:82
 msgid "Status"
-msgstr "Статус"
+msgstr ""
 
 #: class-book-a-place.php:1174 class-book-a-place.php:2206
 msgid "Warning!"
-msgstr "Внимание!"
+msgstr ""
 
 #: class-book-a-place.php:1176 class-book-a-place.php:2208
 msgid "Sorry, you can not add this place to your cart!"
-msgstr "Простите, вы не можете добавить это место в корзину!"
+msgstr ""
 
 #: class-book-a-place.php:1260
 msgid "Cart"
-msgstr "Корзина"
+msgstr ""
 
 #: class-book-a-place.php:1262
 msgid "The cart will be cleared in"
-msgstr "Корзина будет создана через"
+msgstr ""
 
 #: class-book-a-place.php:1268 views/admin-events.php:365
 #: views/admin-schemes-list.php:22 views/admin-schemes-list.php:43
 #: views/admin-schemes-view.php:6 views/includes/admin-schemes-form.php:25
 msgid "Name"
-msgstr "Имя"
+msgstr ""
 
 #: class-book-a-place.php:1269 views/admin-schemes-view.php:10
 msgid "Price"
-msgstr "Цена"
+msgstr ""
 
 #: class-book-a-place.php:1284 views/admin-events.php:97
 #: views/admin-orders-list.php:240 views/admin-schemes-list.php:73
 msgid "Delete"
-msgstr "Удалить"
+msgstr ""
 
 #: class-book-a-place.php:1290
 msgid "There are no places in the cart."
-msgstr "Корзина пуста"
+msgstr ""
 
 #: class-book-a-place.php:1297 views/admin-orders-view.php:93
 msgid "Total Price"
-msgstr "Общая цена"
+msgstr ""
 
 #: class-book-a-place.php:1309 class-book-a-place.php:1312
 #: class-book-a-place.php:1342 class-book-a-place.php:2285
 msgid "Checkout"
-msgstr "Заказать"
+msgstr ""
 
 #: class-book-a-place.php:1313 views/admin-events.php:359
 #, php-format
@@ -141,22 +141,22 @@ msgstr ""
 #: class-book-a-place.php:1319 views/admin-orders-list.php:164
 #: views/admin-orders-list.php:201 views/admin-orders-view.php:52
 msgid "First Name"
-msgstr "Имя"
+msgstr ""
 
 #: class-book-a-place.php:1323 views/admin-orders-list.php:167
 #: views/admin-orders-list.php:204 views/admin-orders-view.php:57
 msgid "Last Name"
-msgstr "Фамилия"
+msgstr ""
 
 #: class-book-a-place.php:1327 views/admin-orders-list.php:170
 #: views/admin-orders-list.php:207 views/admin-orders-view.php:62
 msgid "Email"
-msgstr "Email"
+msgstr ""
 
 #: class-book-a-place.php:1331 views/admin-orders-list.php:173
 #: views/admin-orders-list.php:210 views/admin-orders-view.php:67
 msgid "Phone"
-msgstr "Телефон"
+msgstr ""
 
 #: class-book-a-place.php:1335 views/admin-orders-view.php:72
 msgid "Notes"
