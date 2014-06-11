@@ -24,7 +24,7 @@ msgid "Available"
 msgstr ""
 
 #: class-book-a-place.php:122
-msgid "Booked"
+msgid "Забронированно"
 msgstr ""
 
 #: class-book-a-place.php:123
