@@ -638,7 +638,8 @@ class Book_A_Place
                                   `last_name` varchar(255) DEFAULT NULL,
                                   `email` varchar(255) DEFAULT NULL,
                                   `phone` varchar(255) DEFAULT NULL,
-                                  `notes` text,
+                                  `delivery` text,
+								  `notes` text,
                                   `date` datetime DEFAULT NULL,
                                   `code` varchar(255) DEFAULT NULL,
                                   `places` text,
@@ -1333,11 +1334,9 @@ Regards';
             <p class="input-notice">Only digits, e.g. 15417543010</p>
             </div>
 			
-			<div class="field">
-            <label for="checkout-delivery">' . __("delivery", $this->plugin_slug) . ' <span class="required">*</span></label>
+            <label for="checkout-delivery">' . __("Delivery", $this->plugin_slug) . ' </label>
             <input type="text" name="checkout-delivery" id="checkout-delivery" value="" class="text"/>
             <p class="input-notice">enter a delivery address</p>
-            </div>
 			
             <label for="checkout-notes">' . __("Notes", $this->plugin_slug) . '</label>
             <textarea name="checkout-notes" id="checkout-notes" class="text"></textarea>
@@ -1471,6 +1470,7 @@ Regards';
             'last_name' => stripslashes($_POST['last_name']),
             'email' => stripslashes($_POST['email']),
             'phone' => stripslashes($_POST['phone']),
+			'delivery' => stripslashes($_POST['delivery']),
             'notes' => stripslashes($_POST['notes']),
             'date' => current_time('mysql'),
             'places' => serialize($places_list),
@@ -1656,6 +1656,7 @@ Regards';
             '<last_name>',
             '<email>',
             '<phone>',
+			'<delivery>',
             '<notes>',
             '<date>',
             '<code>',
@@ -1674,6 +1675,7 @@ Regards';
             $data->last_name,
             $data->email,
             $data->phone,
+			$data->delivery,
             $data->notes,
             $data->date,
             $data->code,
@@ -2393,7 +2395,7 @@ Regards';
     {
         ob_clean();
 
-        $csvout = 'N,First Name,Last Name,Email,Phone,Notes,Date,Code,Places,Price,Status,Admin Notes,Event Name' . "\n";
+        $csvout = 'N,First Name,Last Name,Email,Phone,Delivery,Notes,Date,Code,Places,Price,Status,Admin Notes,Event Name' . "\n";
 
         foreach ($orders as $key => $order) {
 
@@ -2406,7 +2408,7 @@ Regards';
 
             }
 
-            $csvout .= ($key + 1) . ',' . $order->first_name . ',' . $order->last_name . ',' . $order->email . ',' . $order->phone . ',' . $order->notes . ',' . $order->date . ',' . $order->code . ',' . $places . ',' . number_format($order->total_price, 2, '.', ' ') . ',' . $this->order_statuses[$order->status_id] . ',' . $order->admin_notes . ',' . $order->event_name . "\n";
+            $csvout .= ($key + 1) . ',' . $order->first_name . ',' . $order->last_name . ',' . $order->email . ',' . $order->phone . ',' . $order->delivery . ',' . $order->notes . ',' . $order->date . ',' . $order->code . ',' . $places . ',' . number_format($order->total_price, 2, '.', ' ') . ',' . $this->order_statuses[$order->status_id] . ',' . $order->admin_notes . ',' . $order->event_name . "\n";
 
         }
 
