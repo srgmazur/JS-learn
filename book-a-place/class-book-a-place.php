@@ -639,7 +639,7 @@ class Book_A_Place
                                   `email` varchar(255) DEFAULT NULL,
                                   `phone` varchar(255) DEFAULT NULL,
                                   `delivery` text,
-								  `notes` text,
+                                  `notes` text,
                                   `date` datetime DEFAULT NULL,
                                   `code` varchar(255) DEFAULT NULL,
                                   `places` text,
@@ -1333,7 +1333,7 @@ Regards';
             <input type="text" name="checkout-phone" id="checkout-phone" value="" class="text"/>
             <p class="input-notice">Only digits, e.g. 15417543010</p>
             </div>
-			
+            
             <label for="checkout-delivery">' . __("Delivery", $this->plugin_slug) . ' </label>
             <input type="text" name="checkout-delivery" id="checkout-delivery" value="" class="text"/>
             <p class="input-notice">enter a delivery address</p>
@@ -1470,7 +1470,7 @@ Regards';
             'last_name' => stripslashes($_POST['last_name']),
             'email' => stripslashes($_POST['email']),
             'phone' => stripslashes($_POST['phone']),
-			'delivery' => stripslashes($_POST['delivery']),
+            'delivery' => stripslashes($_POST['delivery']),
             'notes' => stripslashes($_POST['notes']),
             'date' => current_time('mysql'),
             'places' => serialize($places_list),
@@ -1480,6 +1480,7 @@ Regards';
             'event_name' => $event_name,
             'event' => serialize($event),
         ), array(
+            '%s',
             '%s',
             '%s',
             '%s',
@@ -1656,7 +1657,7 @@ Regards';
             '<last_name>',
             '<email>',
             '<phone>',
-			'<delivery>',
+            '<delivery>',
             '<notes>',
             '<date>',
             '<code>',
@@ -1675,7 +1676,7 @@ Regards';
             $data->last_name,
             $data->email,
             $data->phone,
-			$data->delivery,
+            $data->delivery,
             $data->notes,
             $data->date,
             $data->code,
