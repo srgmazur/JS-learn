@@ -638,7 +638,7 @@ class Book_A_Place
                                   `last_name` varchar(255) DEFAULT NULL,
                                   `email` varchar(255) DEFAULT NULL,
                                   `phone` varchar(255) DEFAULT NULL,
-                                  `delivery` text,
+                                  `delivery` varchar(255) DEFAULT NULL,
                                   `notes` text,
                                   `date` datetime DEFAULT NULL,
                                   `code` varchar(255) DEFAULT NULL,
@@ -1435,7 +1435,6 @@ Regards';
     public function checkout()
     {
         global $wpdb;
-
         // event verifications
         if (isset($_POST['event_id']) && !empty($_POST['event_id'])) {
             $event = $this->get_event_by_id($_POST['event_id'], ARRAY_A);
