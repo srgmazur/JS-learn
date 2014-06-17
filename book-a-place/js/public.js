@@ -14,7 +14,7 @@
                     checkoutLastName = $('#checkout-last-name'),
                     checkoutEmail = $('#checkout-email'),
                     checkoutPhone = $('#checkout-phone'),
-					checkoutDelivery = $('#checkout-delivery'),
+                    checkoutDelivery = $('#checkout-delivery'),
                     checkoutNotes = $('#checkout-notes');
 
                 if (checkoutFirstName.val().length == 0) {
@@ -56,7 +56,7 @@
                         last_name: checkoutLastName.val(),
                         email: checkoutEmail.val(),
                         phone: checkoutPhone.val(),
-						delivery: checkoutDelivery.val(),
+                        delivery: checkoutDelivery.val(),
                         notes: checkoutNotes.val(),
                         scheme_id: scheme_id,
                         event_id: event_id

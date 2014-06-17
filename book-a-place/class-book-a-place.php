@@ -1435,6 +1435,10 @@ Regards';
     public function checkout()
     {
         global $wpdb;
+<<<<<<< HEAD
+=======
+        //die(var_dump($_POST));
+>>>>>>> origin/master
         // event verifications
         if (isset($_POST['event_id']) && !empty($_POST['event_id'])) {
             $event = $this->get_event_by_id($_POST['event_id'], ARRAY_A);
