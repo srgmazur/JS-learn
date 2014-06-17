@@ -638,7 +638,7 @@ class Book_A_Place
                                   `last_name` varchar(255) DEFAULT NULL,
                                   `email` varchar(255) DEFAULT NULL,
                                   `phone` varchar(255) DEFAULT NULL,
-                                  `delivery` varchar(255) DEFAULT NULL,
+                                  `delivery` text,
                                   `notes` text,
                                   `date` datetime DEFAULT NULL,
                                   `code` varchar(255) DEFAULT NULL,
