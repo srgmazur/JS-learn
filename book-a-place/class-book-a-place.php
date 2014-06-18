@@ -638,7 +638,7 @@ class Book_A_Place
                                   `last_name` varchar(255) DEFAULT NULL,
                                   `email` varchar(255) DEFAULT NULL,
                                   `phone` varchar(255) DEFAULT NULL,
-                                  `delivery` varchar(255) DEFAULT NULL,
+                                  `delivery` text,
                                   `notes` text,
                                   `date` datetime DEFAULT NULL,
                                   `code` varchar(255) DEFAULT NULL,
@@ -1337,9 +1337,12 @@ Regards';
             <label for="checkout-delivery">' . __("Delivery", $this->plugin_slug) . ' </label>
             <input type="text" name="checkout-delivery" id="checkout-delivery" value="" class="text"/>
             <p class="input-notice">enter a delivery address</p>
-			
+
             <label for="checkout-notes">' . __("Notes", $this->plugin_slug) . '</label>
-            <textarea name="checkout-notes" id="checkout-notes" class="text"></textarea>
+            <select name="checkout-notes" id="checkout-notes">
+                <option value="address1">address1</option>
+                <option value="address2">address2</option>
+            </select>
 
         </fieldset>
     </form>
@@ -1435,10 +1438,6 @@ Regards';
     public function checkout()
     {
         global $wpdb;
-<<<<<<< HEAD
-=======
-        //die(var_dump($_POST));
->>>>>>> origin/master
         // event verifications
         if (isset($_POST['event_id']) && !empty($_POST['event_id'])) {
             $event = $this->get_event_by_id($_POST['event_id'], ARRAY_A);
