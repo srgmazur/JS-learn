@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>доставка</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+	function selectDelivery () {
+		var selectedValue = document.getElementById('');
+		inputDelivery=document.getElementById('other');
+			if (this.selectedIndex=='5')
+				inpEl.style.visibility='visible';
+			else inpEl.style.visibility='hidden';
+		}
+</script>
+
+<style type="text/css"><!--
+#pets_1_show {display:none;}
+#pets_2_show {display:none;}
+--></style>
+<script type="text/javascript" src="sel.js"></script>
+<script type="text/javascript"><!--
+//
+function mChange1(obj){
+	var el, s, s1, n, v;
+	deliveryOption = ["1", "2"];
+	el = obj.options;
+	n = el.selectedIndex;
+	v = el[n].value;
+	s = obj.id+'_'+deliveryOption[0]+'_show';
+	s1 = obj.id+'_'+deliveryOption[1]+'_show';
+	switch (v) {
+		case "2":
+			if(document.getElementById(s)){
+				document.getElementById(s).style.display="block";
+			}
+			if(document.getElementById(s1)){
+				document.getElementById(s1).style.display="none";
+			}
+		break;
+		
+		case "1":
+			if(document.getElementById(s)){
+				document.getElementById(s).style.display="none";
+			}
+			if(document.getElementById(s1)){
+				document.getElementById(s1).style.display="block";
+			}
+		break;
+		case "0":
+			if(document.getElementById(s)){
+				document.getElementById(s).style.display="none";
+			}
+			if(document.getElementById(s1)){
+				document.getElementById(s1).style.display="none";
+			}
+		break;
+	}
+	
+	
+	
+	
+	
+	/*
+	if (v == "2"){
+		s = obj.id+'_'+deliveryOption[0]+'_show';
+		if(document.getElementById(s)){
+			document.getElementById(s).style.visibility="visible";
+		}
+	}
+	else if (v == "1") {
+			s = obj.id+'_'+deliveryOption[0]+'_show';
+			if(document.getElementById(s)){
+			document.getElementById(s).style.visibility="hidden";
+		}
+	}
+	
+	//s1 = obj.id+'_'+deliveryOption[1]+'_show';*/
+};//
+//
+
+--></script>
+
+<body>
+
+<form>
+	<fieldset>
+	<input type="hidden" name="action" value=""/>
+
+	<label for="checkout-first-name"> <span class="required">*</span></label>
+          <input type="text" name="checkout-first-name" id="checkout-first-name" class="text"/>
+
+          <label for="checkout-last-name"> <span class="required">*</span></label>
+          <input type="text" name="checkout-last-name" id="checkout-last-name" value="" class="text"/>
+
+	<label for="checkout-email"> <span class="required">*</span></label>
+          <input type="text" name="checkout-email" id="checkout-email" value="" class="text"/>
+
+	<label for="checkout-phone"> <span class="required">*</span></label>
+          <input type="text" name="checkout-phone" id="checkout-phone" value="" class="text"/>
+          <p class="input-notice">Only digits, e.g. 15417543010</p>
+	
+	<select name = "delivery-option" id = "delivery-option" onchange = "selectDelivery ()">
+		<option value="0" selected>Самовывоз</option>
+		<option value="1" >Доставка на дом</option>
+	</select>
+	<label for="checkout-delivery"> </label>
+	<input type="text" name="checkout-delivery" id="checkout-delivery" value="" class="text"/>
+          <p class="input-notice">enter a delivery address</p>
+
+	<label for="checkout-notes"></label>
+          <select name="checkout-notes" id="checkout-notes">
+                <option value="address1">address1</option>
+                <option value="address2">address2</option>
+            </select>
+
+        </fieldset>
+    </form>
+
+	
+	<div>
+	<p>Выберите животное...</p>
+<select name="pets" id="pets" style="width: 278px;" onchange="mChange1(this);">
+<option value="0">Выберите животное...</option>
+<option value="1">Собаки</option>
+<option value="2">Кошки</option>
+</select>
+<input type="text" value="" name="pets_1_show" id="pets_1_show">
+<select name="pets_2_show" id="pets_2_show" style="width: 278px;">
+	<option value="01">1...</option>
+	<option value="11">2</option>
+	<option value="21">3</option>
+	<option value="31">4</option>
+</select>
+</div>
+</body>
+</html>
