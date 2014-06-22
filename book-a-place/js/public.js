@@ -312,6 +312,41 @@
             var pattern = /^\d+$/;
             return pattern.test(phone);
         }
+		//select delivery option
+		function selectDelivery(obj){
+			var el, s, s1, n, v;
+				el = obj.options;
+				n = el.selectedIndex;
+				v = el[n].value;
+				s = obj.id+'-self';
+				s1 = obj.id+'-help';
+			switch (v) {//switch number of options in the drop down with delivery options
+				case "1"://for self delivery
+					if(document.getElementById(s)){
+						document.getElementById(s).style.display="block";//view a drop down to select the address
+					}
+					if(document.getElementById(s1)){
+						document.getElementById(s1).style.display="none";//hide an input to fill in the self address to deliver to
+					}
+				break;
+				case "2":
+					if(document.getElementById(s)){
+						document.getElementById(s).style.display="none";//hide a drop down to select the address
+					}
+					if(document.getElementById(s1)){
+						document.getElementById(s1).style.display="block";//view an input to fill in the self address to deliver to
+					}
+				break;
+				case "0":
+					if(document.getElementById(s)){
+						document.getElementById(s).style.display="none";//hide a drop down to select the address
+					}
+					if(document.getElementById(s1)){
+						document.getElementById(s1).style.display="none";//hide an input to fill in the self address to deliver to
+					}
+				break;
+			}
+		};
 
     });
 }(jQuery));

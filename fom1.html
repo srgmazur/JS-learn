@@ -5,21 +5,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <style type="text/css"><!--
-#checkout-delivery_1_show {display:none;}
-#checkout-delivery_2_show {display:none;}
+#checkout-delivery-self {display:none;}
+#checkout-delivery-help {display:none;}
 --></style>
 <script type="text/javascript"><!--
 //
 function selectDelivery(obj){
 	var el, s, s1, n, v;
-	deliveryOption = ["1", "2"];
 	el = obj.options;
 	n = el.selectedIndex;
 	v = el[n].value;
-	s = obj.id+'_'+deliveryOption[0]+'_show';
-	s1 = obj.id+'_'+deliveryOption[1]+'_show';
+	s = obj.id+'-self';
+	s1 = obj.id+'-help';
 	switch (v) {
-		case "2":
+		case "1":
 			if(document.getElementById(s)){
 				document.getElementById(s).style.display="block";
 			}
@@ -28,7 +27,7 @@ function selectDelivery(obj){
 			}
 		break;
 		
-		case "1":
+		case "2":
 			if(document.getElementById(s)){
 				document.getElementById(s).style.display="none";
 			}
@@ -50,7 +49,7 @@ function selectDelivery(obj){
 
 <body>
 
-<form>
+<!--<form>
 	<fieldset>
 	<input type="hidden" name="action" value=""/>
 
@@ -83,20 +82,18 @@ function selectDelivery(obj){
 
         </fieldset>
     </form>
-
+-->
 	
 	<div>
 <select name="checkout-delivery" id="checkout-delivery" style="width: 278px;" onchange="selectDelivery(this);">
-<option value="0">Выберите животное...</option>
-<option value="1">Собаки</option>
-<option value="2">Кошки</option>
+	<option value="0">Выберите способ доставки...</option>
+	<option value="1">Доставка на дом</option>
+	<option value="2">Самовывоз</option>
 </select>
-<input type="text" value="" name="checkout-delivery_1_show" id="checkout-delivery_1_show">
-<select name="checkout-delivery_2_show" id="checkout-delivery_2_show" style="width: 278px;">
-	<option value="01">1...</option>
-	<option value="11">2</option>
-	<option value="21">3</option>
-	<option value="31">4</option>
+<input type="text" value="" name="checkout-delivery-self" id="checkout-delivery-self">
+<select name="checkout-delivery-help" id="checkout-delivery-help" style="width: 278px;">
+	<option value="0">address 1</option>
+	<option value="1">address 2</option>
 </select>
 </div>
 </body>

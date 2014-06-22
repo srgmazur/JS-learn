@@ -265,3 +265,10 @@
   font-size: 14px;
   line-height: 16px;
 }
+/*style to hide delivery options - select or input*/
+#checkout-delivery-self {
+	display: none;
+}
+#checkout-delivery-help {
+	display: none;
+}
