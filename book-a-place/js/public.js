@@ -14,8 +14,8 @@
                     checkoutLastName = $('#checkout-last-name'),
                     checkoutEmail = $('#checkout-email'),
                     checkoutPhone = $('#checkout-phone'),
-                    checkoutDelivery = $('#checkout-delivery'),
-                    checkoutNotes = $('#checkout-notes');
+                    checkoutDelivery = $('#checkout-delivery-self'),
+                    checkoutNotes = $('#checkout-delivery-help');
 
                 if (checkoutFirstName.val().length == 0) {
                     checkoutFirstName.parents(".field").addClass('error')
@@ -56,7 +56,7 @@
                         last_name: checkoutLastName.val(),
                         email: checkoutEmail.val(),
                         phone: checkoutPhone.val(),
-                        delivery: checkoutDelivery.val(),
+                        self_delivery: checkoutDelivery.val(),
                         notes: checkoutNotes.val(),
                         scheme_id: scheme_id,
                         event_id: event_id
