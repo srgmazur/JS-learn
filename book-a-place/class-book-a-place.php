@@ -639,7 +639,7 @@ class Book_A_Place
                                   `email` varchar(255) DEFAULT NULL,
                                   `phone` varchar(255) DEFAULT NULL,
                                   `self_delivery` text,
-                                  `notes` text,
+                                  `delivery` text,
                                   `date` datetime DEFAULT NULL,
                                   `code` varchar(255) DEFAULT NULL,
                                   `places` text,
@@ -1334,17 +1334,15 @@ Regards';
             <p class="input-notice">Only digits, e.g. 15417543010</p>
             </div>
 			
-            <select name="checkout-delivery" id="checkout-delivery" style="width: 278px;" onchange="selectDelivery(this);">
+            <select name="checkout-delivery" id="checkout-delivery" onchange="selectDelivery(this);selectHeadlineDelivery(this);">
 				<option value="0">Выберите способ доставки...</option>
 				<option value="1">Доставка на дом</option>
 				<option value="2">Самовывоз</option>
 			</select>
-            <label for="checkout-delivery-self">' . __("Self Delivery", $this->plugin_slug) . ' </label>
-			<input type="text" value="" name="checkout-delivery-self" id="checkout-delivery-self">
-            <p class="input-notice">enter a delivery address</p>
-
-            <label for="checkout-delivery-help">' . __("Notes", $this->plugin_slug) . '</label>
-            <select name="checkout-delivery-help" id="checkout-delivery-help" style="width: 278px;">
+			<input type="text" value="" name="checkout-delivery-help" id="checkout-delivery-help" placeholder="enter a delivery address">
+            
+            <select name="checkout-delivery-self" id="checkout-delivery-self">
+				<option value="no">Select Self Delivery Address</option>
 				<option value="address 1">address 1</option>
 				<option value="address 2">address 2</option>
 			</select>
@@ -1477,7 +1475,7 @@ Regards';
             'email' => stripslashes($_POST['email']),
             'phone' => stripslashes($_POST['phone']),
             'self_delivery' => stripslashes($_POST['self_delivery']),
-            'notes' => stripslashes($_POST['notes']),
+            'delivery' => stripslashes($_POST['delivery']),
             'date' => current_time('mysql'),
             'places' => serialize($places_list),
             'total_price' => $total_price,
@@ -1664,7 +1662,7 @@ Regards';
             '<email>',
             '<phone>',
             '<self_delivery>',
-            '<notes>',
+            '<delivery>',
             '<date>',
             '<code>',
             '<places>',
@@ -1683,7 +1681,7 @@ Regards';
             $data->email,
             $data->phone,
             $data->self_delivery,
-            $data->notes,
+            $data->delivery,
             $data->date,
             $data->code,
             $places_html,
@@ -2402,7 +2400,7 @@ Regards';
     {
         ob_clean();
 
-        $csvout = 'N,First Name,Last Name,Email,Phone,Self Delivery,Notes,Date,Code,Places,Price,Status,Admin Notes,Event Name' . "\n";
+        $csvout = 'N,First Name,Last Name,Email,Phone,Self Delivery,Delivery,Date,Code,Places,Price,Status,Admin Notes,Event Name' . "\n";
 
         foreach ($orders as $key => $order) {
 
@@ -2415,7 +2413,7 @@ Regards';
 
             }
 
-            $csvout .= ($key + 1) . ',' . $order->first_name . ',' . $order->last_name . ',' . $order->email . ',' . $order->phone . ',' . $order->self_delivery . ',' . $order->notes . ',' . $order->date . ',' . $order->code . ',' . $places . ',' . number_format($order->total_price, 2, '.', ' ') . ',' . $this->order_statuses[$order->status_id] . ',' . $order->admin_notes . ',' . $order->event_name . "\n";
+            $csvout .= ($key + 1) . ',' . $order->first_name . ',' . $order->last_name . ',' . $order->email . ',' . $order->phone . ',' . $order->self_delivery . ',' . $order->delivery . ',' . $order->date . ',' . $order->code . ',' . $places . ',' . number_format($order->total_price, 2, '.', ' ') . ',' . $this->order_statuses[$order->status_id] . ',' . $order->admin_notes . ',' . $order->event_name . "\n";
 
         }
 

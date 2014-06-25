@@ -14,8 +14,8 @@
                     checkoutLastName = $('#checkout-last-name'),
                     checkoutEmail = $('#checkout-email'),
                     checkoutPhone = $('#checkout-phone'),
-                    checkoutDelivery = $('#checkout-delivery-self'),
-                    checkoutNotes = $('#checkout-delivery-help');
+                    checkoutSelfDelivery = $('#checkout-delivery-self'),
+                    checkoutDelivery = $('#checkout-delivery-help');
 
                 if (checkoutFirstName.val().length == 0) {
                     checkoutFirstName.parents(".field").addClass('error')
@@ -56,8 +56,8 @@
                         last_name: checkoutLastName.val(),
                         email: checkoutEmail.val(),
                         phone: checkoutPhone.val(),
-                        self_delivery: checkoutDelivery.val(),
-                        notes: checkoutNotes.val(),
+                        self_delivery: checkoutSelfDelivery.val(),
+                        delivery: checkoutDelivery.val(),
                         scheme_id: scheme_id,
                         event_id: event_id
                     };
@@ -312,7 +312,12 @@
             var pattern = /^\d+$/;
             return pattern.test(phone);
         }
-		//select delivery option
+		
+
+    });
+}(jQuery));
+
+//select delivery option
 		function selectDelivery(obj){
 			var el, s, s1, n, v;
 				el = obj.options;
@@ -321,22 +326,6 @@
 				s = obj.id+'-self';
 				s1 = obj.id+'-help';
 			switch (v) {//switch number of options in the drop down with delivery options
-				case "1"://for self delivery
-					if(document.getElementById(s)){
-						document.getElementById(s).style.display="block";//view a drop down to select the address
-					}
-					if(document.getElementById(s1)){
-						document.getElementById(s1).style.display="none";//hide an input to fill in the self address to deliver to
-					}
-				break;
-				case "2":
-					if(document.getElementById(s)){
-						document.getElementById(s).style.display="none";//hide a drop down to select the address
-					}
-					if(document.getElementById(s1)){
-						document.getElementById(s1).style.display="block";//view an input to fill in the self address to deliver to
-					}
-				break;
 				case "0":
 					if(document.getElementById(s)){
 						document.getElementById(s).style.display="none";//hide a drop down to select the address
@@ -345,8 +334,53 @@
 						document.getElementById(s1).style.display="none";//hide an input to fill in the self address to deliver to
 					}
 				break;
+				case "1"://delivery
+					if(document.getElementById(s)){
+						document.getElementById(s).style.display="none";//hide a drop down to select the address
+					}
+					if(document.getElementById(s1)){
+						document.getElementById(s1).style.display="block";//view an input to fill in the self address to deliver to
+					}
+				break;
+				case "2"://for self delivery
+					if(document.getElementById(s)){
+						document.getElementById(s).style.display="block";//view a drop down to select the address
+					}
+					if(document.getElementById(s1)){
+						document.getElementById(s1).style.display="none";//hide an input to fill in the self address to deliver to
+					}
+				break;
 			}
 		};
-
-    });
-}(jQuery));
+		function selectHeadlineDelivery(obj){
+		var el, n, v;
+				el = obj.options;
+				n = el.selectedIndex;
+				v = el[n].value;
+		switch (v) {//switch number of options in the drop down with delivery options
+				case "0":
+					if(document.getElementById('headline-self')){
+						document.getElementById('headline-self').style.display="none";//hide a drop down to select the address
+					}
+					if(document.getElementById('headline-help')){
+						document.getElementById('headline-help').style.display="none";//hide an input to fill in the self address to deliver to
+					}
+				break;
+				case "1"://delivery
+					if(document.getElementById('headline-self')){
+						document.getElementById('headline-self').style.display="none";//hide a drop down to select the address
+					}
+					if(document.getElementById('headline-help')){
+						document.getElementById('headline-help').style.display="block";//view an input to fill in the self address to deliver to
+					}
+				break;
+				case "2"://for self delivery
+					if(document.getElementById('headline-self')){
+						document.getElementById('headline-self').style.display="block";//view a drop down to select the address
+					}
+					if(document.getElementById('headline-help')){
+						document.getElementById('headline-help').style.display="none";//hide an input to fill in the self address to deliver to
+					}
+				break;
+			}
+		}

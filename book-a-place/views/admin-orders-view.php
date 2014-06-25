@@ -74,8 +74,8 @@ $scheme = $this->get_scheme_by_place_id($place_ids[0]);
         </tr>
 
         <tr valign="top">
-            <th scope="row"><?php _e("Notes", $this->plugin_slug); ?></th>
-            <td><?php echo $order->notes; ?></td>
+            <th scope="row"><?php _e("Delivery", $this->plugin_slug); ?></th>
+            <td><?php echo $order->delivery; ?></td>
         </tr>
 
         <tr valign="top">
