@@ -127,18 +127,18 @@ class Book_A_Place
         );
 
         $this->order_statuses = array(
-            0 => __('Not defined', $this->plugin_slug),
-            1 => __('Set', $this->plugin_slug),
-            2 => __('Paid', $this->plugin_slug),
-            3 => __('Cancelled', $this->plugin_slug),
+            0 => __('Не выбрано', $this->plugin_slug),
+            1 => __('Выбрано', $this->plugin_slug),
+            2 => __('Оплачено', $this->plugin_slug),
+            3 => __('Отменено', $this->plugin_slug),
         );
 
         $this->success_user_messages = array(
-            1 => __('Places has been successfully booked.', $this->plugin_slug),
+            1 => __('Места были удачно забронированы.', $this->plugin_slug),
         );
 
         $this->error_user_messages = array(
-            1 => __('Error. Places has not been booked.', $this->plugin_slug),
+            1 => __('Ошибка. Места не были забронированы', $this->plugin_slug),
         );
 
         self::add_options();
@@ -1321,10 +1321,10 @@ Regards';
             <label for="checkout-first-name">' . __("First Name", $this->plugin_slug) . ' <span class="required">*</span></label>
             <input type="text" name="checkout-first-name" id="checkout-first-name" class="text"/>
             </div>
-            <div class="field">
+            <!--<div class="field">
             <label for="checkout-last-name">' . __("Last Name", $this->plugin_slug) . ' <span class="required">*</span></label>
             <input type="text" name="checkout-last-name" id="checkout-last-name" value="" class="text"/>
-            </div>
+            </div>-->
             <div class="field">
             <label for="checkout-email">' . __("Email", $this->plugin_slug) . ' <span class="required">*</span></label>
             <input type="text" name="checkout-email" id="checkout-email" value="" class="text"/>
@@ -1332,20 +1332,22 @@ Regards';
             <div class="field">
             <label for="checkout-phone">' . __("Phone", $this->plugin_slug) . ' <span class="required">*</span></label>
             <input type="text" name="checkout-phone" id="checkout-phone" value="" class="text"/>
-            <p class="input-notice">Only digits, e.g. 15417543010</p>
             </div>
 			
             <select name="checkout-delivery" id="checkout-delivery" onchange="selectDelivery(this);selectHeadlineDelivery(this);">
 				<option value="0">Выберите способ доставки...</option>
 				<option value="1">Доставка на дом</option>
-				<option value="2">Самовывоз</option>
+				<option value="2">Самовывоз из кассы</option>
 			</select>
-			<input type="text" value="" name="checkout-delivery-help" id="checkout-delivery-help" placeholder="enter a delivery address">
+			<p class="input-notice">Доставка билетов по Харькову бесплатная</p>
+			<input type="text" value="" name="checkout-delivery-help" id="checkout-delivery-help" placeholder="введите адрес доставки билетов">
             
             <select name="checkout-delivery-self" id="checkout-delivery-self">
-				<option value="no">Select Self Delivery Address</option>
-				<option value="address 1">address 1</option>
-				<option value="address 2">address 2</option>
+				<option value="без самовывоза">Выберите адрес кассы</option>
+				<option value="г.Харьков, ул.Сумская 9, театр им.Т.Г.Шевченко, театральная касса компании «Артист» в кассовом зале театра (время работы  12:00-18:00)">г.Харьков, ул.Сумская 9, театр им.Т.Г.Шевченко, театральная касса компании «Артист» в кассовом зале театра (время работы  12:00-18:00)</option>
+				<option value="г.Харьков, ул.Сумская 25, ХНАТОБ (оперный театр), билетные кассы, касса №3 (время работы  12:00-19:00)">г.Харьков, ул.Сумская 25, ХНАТОБ (оперный театр), билетные кассы, касса №3 (время работы  12:00-19:00)</option>
+				<option value="г.Харьков, билетные кассы в переходе метро «Исторический музей» (время работы  10:00-18:00)">г.Харьков, билетные кассы в переходе метро «Исторический музей» (время работы  10:00-18:00)</option>
+				<option value="г.Харьков, билетная касса напротив ТЦ «Детский мир» (метро «Советская») (время работы  11:00-18:00)">г.Харьков, билетная касса напротив ТЦ «Детский мир» (метро «Советская») (время работы  11:00-18:00)</option>
 			</select>
         </fieldset>
     </form>
@@ -2189,15 +2191,16 @@ Regards';
 
         $html .= '<h2>' . $event->name . '</h2>';
 
-        $html .= '<p>' . __("Start", $this->plugin_slug) . ': ' . $event->start . '<br>' . __("End", $this->plugin_slug) . ': ' . $event->end . '</p>';
+        //$html .= '<p>' . __("Start", $this->plugin_slug) . ': ' . $event->start . '<br>' . __("End", $this->plugin_slug) . ': ' . $event->end . '</p>';
 
-        $html .= '<p>' . $event->description . '</p>';
+        //$html .= '<p>' . $event->description . '</p>';
 
-        $html .= '<p><a href="' . $event->url . '">' . $event->url . '</a></p>';
+        //$html .= '<p><a href="' . $event->url . '">' . $event->url . '</a></p>';
 
-        $html .= '<p><strong>' . $scheme_details->name . '</strong></p>';
+        //$html .= '<p><strong>' . $scheme_details->name . '</strong></p>';
 
-        $html .= '<p>' . $scheme_details->description . '</p>';
+        //$html .= '<p>' . $scheme_details->description . '</p>';
+		$html .= '<h1>' . "С Ц Е Н А" . '</h1>';
 
         $html .= '<div id="scheme-container">';
 

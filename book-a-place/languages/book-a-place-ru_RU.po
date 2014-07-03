@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Book a Place 0.4.2\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/plugins/plugin-name\n"
 "POT-Creation-Date: 2014-05-20 15:56+0200\n"
-"PO-Revision-Date: 2014-07-03 15:14+0200\n"
+"PO-Revision-Date: 2014-07-03 18:03+0200\n"
 "Last-Translator: Sergey Mazur <srgmazur@gmail.com>\n"
 "Language-Team: LANGUAGE <translations@example.com >\n"
 "Language: ru_RU\n"
@@ -57,7 +57,7 @@ msgstr "Отменено"
 
 #: class-book-a-place.php:136
 msgid "Places has been successfully booked."
-msgstr "Места были удачно забронированы"
+msgstr "Места были удачно забронированы."
 
 #: class-book-a-place.php:140
 msgid "Error. Places has not been booked."
@@ -109,7 +109,7 @@ msgstr "Корзина будет очищена через"
 #: views/admin-schemes-list.php:22 views/admin-schemes-list.php:43
 #: views/admin-schemes-view.php:6 views/includes/admin-schemes-form.php:25
 msgid "Name"
-msgstr "Имя"
+msgstr "ФИО"
 
 #: class-book-a-place.php:1269 views/admin-schemes-view.php:10
 msgid "Price"

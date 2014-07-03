@@ -23,11 +23,11 @@
                     checkoutFirstName.parents(".field").removeClass('error')
                 }
 
-                if (checkoutLastName.val().length == 0) {
+                /*if (checkoutLastName.val().length == 0) {
                     checkoutLastName.parents(".field").addClass('error')
                 } else {
                     checkoutLastName.parents(".field").removeClass('error')
-                }
+                }*/
 
                 if (checkoutEmail.val().length == 0 || !validateEmail(checkoutEmail.val())) {
                     checkoutEmail.parents(".field").addClass('error')
@@ -42,7 +42,7 @@
                 }
 
                 if (checkoutFirstName.val().length == 0 ||
-                    checkoutLastName.val().length == 0 ||
+                    /*checkoutLastName.val().length == 0 ||*/
                     checkoutEmail.val().length == 0 || !validateEmail(checkoutEmail.val()) ||
                     checkoutPhone.val().length == 0 || !validatePhone(checkoutPhone.val())) {
 
