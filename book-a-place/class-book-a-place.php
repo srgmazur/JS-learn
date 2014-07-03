@@ -1188,7 +1188,7 @@ Regards';
     public function places_money_format($number)
     {
         $currency_symbols = $this->get_currency_symbols();
-        return $currency_symbols[$this->options['currency-symbol']] . number_format($number, 2, '.', ',');
+        return number_format($number, 2, '.', ',') . " " .  $currency_symbols[$this->options['currency-symbol']];
     }
 
     public function get_place_statuses()
