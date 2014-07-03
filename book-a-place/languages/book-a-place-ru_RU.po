@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Book a Place 0.4.2\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/plugins/plugin-name\n"
 "POT-Creation-Date: 2014-05-20 15:56+0200\n"
-"PO-Revision-Date: 2014-06-16 16:09+0200\n"
+"PO-Revision-Date: 2014-07-03 14:55+0200\n"
 "Last-Translator: Sergey Mazur <srgmazur@gmail.com>\n"
 "Language-Team: LANGUAGE <translations@example.com >\n"
 "Language: ru_RU\n"
@@ -19,23 +19,23 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: class-book-a-place.php:121
+#: class-book-a-place.php:122
 msgid "Available"
 msgstr "Свободно"
 
-#: class-book-a-place.php:122
+#: class-book-a-place.php:123
 msgid "Booked"
 msgstr "Забронированно"
 
-#: class-book-a-place.php:123
+#: class-book-a-place.php:124
 msgid "In cart"
 msgstr "В корзине"
 
-#: class-book-a-place.php:124
+#: class-book-a-place.php:125
 msgid "In other's cart"
 msgstr "В чужой корзине"
 
-#: class-book-a-place.php:125
+#: class-book-a-place.php:126
 msgid "Unavailable"
 msgstr "Недоступно"
 
@@ -158,17 +158,19 @@ msgstr "Email"
 msgid "Phone"
 msgstr "Телефон"
 
-#: class-book-a-place.php:1335 views/admin-orders-view.php:72
-msgid "Notes"
-msgstr "Заметки"
+msgid "Delivery"
+msgstr "Доставка"
+
+msgid "Self Delivery"
+msgstr "Самовывоз из кассы"
 
 #: class-book-a-place.php:1343
 msgid "Please add to your cart at least one place."
-msgstr ""
+msgstr "Пожалуйста, добавьте в корзину, по крайней мере одно место."
 
 #: class-book-a-place.php:1964
 msgid "Select Scheme"
-msgstr ""
+msgstr "Выбрать Схему"
 
 #: class-book-a-place.php:2177
 msgid "Start"
@@ -176,7 +178,7 @@ msgstr "Начало"
 
 #: class-book-a-place.php:2177
 msgid "End"
-msgstr ""
+msgstr "Конец"
 
 #: class-book-a-place.php:2284
 msgid "Please wait..."
@@ -185,61 +187,61 @@ msgstr "Пожалуйста подождите..."
 #: class-book-a-place.php:2286 views/admin-events.php:36
 #: views/admin-events.php:99 views/admin-orders-view.php:119
 msgid "Cancel"
-msgstr ""
+msgstr "Отмена"
 
 #: class-book-a-place.php:2287
 msgid "Ok"
-msgstr ""
+msgstr "Хорошо"
 
 #: class-book-a-place.php:2288 views/admin-schemes-view.php:1
 msgid "Set a place"
-msgstr ""
+msgstr "Установить Место"
 
 #: class-book-a-place.php:2289 views/admin-schemes-view.php:19
 msgid "Change place status"
-msgstr ""
+msgstr "Изменить место статуса"
 
 #: class-book-a-place.php:2290
 msgid "Change place price"
-msgstr ""
+msgstr "Изменить место цены"
 
 #: class-book-a-place.php:2291
 msgid "Update a place"
-msgstr ""
+msgstr "Обновить место"
 
 #: class-book-a-place.php:2292
 msgid "Are you sure you want to unset this place?"
-msgstr ""
+msgstr "Вы уверены, что хотите сбросить это место?"
 
 #: class-book-a-place.php:2293 views/admin-orders-list.php:301
 msgid "Are you sure you want to delete this item?"
-msgstr ""
+msgstr "Вы уверены, что хотите удалить этот элемент?"
 
 #: views/admin-events.php:33 views/admin-events.php:358
 msgid "Add an event"
-msgstr ""
+msgstr "Добавить событие"
 
 #: views/admin-events.php:35 views/admin-schemes-add.php:23
 msgid "Add"
-msgstr ""
+msgstr "Добавить"
 
 #: views/admin-events.php:95
 msgid "Edit an event"
-msgstr ""
+msgstr "Редактировать событие"
 
 #: views/admin-events.php:98 views/admin-schemes-edit.php:25
 #: views/admin-schemes-list.php:67 views/admin-schemes-list.php:70
 #: views/admin-schemes-view.php:36
 msgid "Edit"
-msgstr ""
+msgstr "Редактировать"
 
 #: views/admin-events.php:239
 msgid "Are you sure you want to delete this event?"
-msgstr ""
+msgstr "Вы уверены, что хотите удалить это событие?"
 
 #: views/admin-events.php:363
 msgid "Event Info"
-msgstr ""
+msgstr "Информация о Событии"
 
 #: views/admin-events.php:369
 msgid "Scheme"
@@ -248,197 +250,197 @@ msgstr "Схема"
 #: views/admin-events.php:375 views/admin-schemes-view.php:8
 #: views/includes/admin-schemes-form.php:29
 msgid "Description"
-msgstr ""
+msgstr "Описание"
 
 #: views/admin-events.php:379
 msgid "Url"
-msgstr ""
+msgstr "Адрес"
 
 #: views/admin-events.php:383
 msgid "Hours"
-msgstr ""
+msgstr "Часов"
 
 #: views/admin-events.php:386
 msgid "Number of hours to close booking before event start."
-msgstr ""
+msgstr "Количество часов для закрытия бронирования до начала события."
 
 #: views/admin-events.php:390
 msgid "Colors"
-msgstr ""
+msgstr "Цвета"
 
 #: views/admin-events.php:392
 msgid "Background Color"
-msgstr ""
+msgstr "Цвет Фона"
 
 #: views/admin-events.php:396
 msgid "Border Color"
-msgstr ""
+msgstr "Цвет Границы"
 
 #: views/admin-events.php:400
 msgid "Text Color"
-msgstr ""
+msgstr "Цвет Текста"
 
 #: views/admin-events.php:406 views/admin-schemes-list.php:32
 #: views/admin-schemes-list.php:53
 msgid "Shortcode"
-msgstr ""
+msgstr "Короткий код"
 
 #: views/admin-events.php:408
 msgid "Here will be shortcode for this event."
-msgstr ""
+msgstr "Для этого мероприятия будет создан короткий код"
 
 #: views/admin-orders-clear.php:8
 msgid "Orders have been successfully deleted."
-msgstr ""
+msgstr "Заказы были успешно удалены."
 
 #: views/admin-orders-delete.php:9
 msgid "Order has been successfully deleted."
-msgstr ""
+msgstr "Заказ был успешно удалён."
 
 #: views/admin-orders-delete.php:14
 msgid "Order id is not specified."
-msgstr ""
+msgstr "ID заказа не указан."
 
 #: views/admin-orders-list.php:13
 msgid "Hide search form"
-msgstr ""
+msgstr "Скрыть форму поиска"
 
 #: views/admin-orders-list.php:14
 msgid "Show search form"
-msgstr ""
+msgstr "Показать форму поиска"
 
 #: views/admin-orders-list.php:61
 msgid "Search Error."
-msgstr ""
+msgstr "Ошибка Поиска."
 
 #: views/admin-orders-list.php:85
 msgid "First Name:"
-msgstr ""
+msgstr "Имя:"
 
 #: views/admin-orders-list.php:90
 msgid "Last Name:"
-msgstr ""
+msgstr "Фамилия:"
 
 #: views/admin-orders-list.php:95
 msgid "Email:"
-msgstr ""
+msgstr "Email:"
 
 #: views/admin-orders-list.php:100
 msgid "Phone:"
-msgstr ""
+msgstr "Телефон:"
 
 #: views/admin-orders-list.php:105
 msgid "Order Code:"
-msgstr ""
+msgstr "Код Заказа:"
 
 #: views/admin-orders-list.php:110
 msgid "Order Status:"
-msgstr ""
+msgstr "Статус Заказа:"
 
 #: views/admin-orders-list.php:113
 msgid "All"
-msgstr ""
+msgstr "Все"
 
 #: views/admin-orders-list.php:119
 msgid "Order Price:"
-msgstr ""
+msgstr "Цена Заказа:"
 
 #: views/admin-orders-list.php:128
 msgid "Order Date:"
-msgstr ""
+msgstr "Дата Заказа:"
 
 #: views/admin-orders-list.php:135
 msgid "Reset Search"
-msgstr ""
+msgstr "Сброс Поиска"
 
 #: views/admin-orders-list.php:136
 msgid "Search"
-msgstr ""
+msgstr "Поиск"
 
 #: views/admin-orders-list.php:145 views/admin-orders-list.php:295
 msgid "Export to csv"
-msgstr ""
+msgstr "Экспорт в csv"
 
 #: views/admin-orders-list.php:146 views/admin-orders-list.php:296
 msgid "Clear table"
-msgstr ""
+msgstr "Очистить таблицу"
 
 #: views/admin-orders-list.php:146 views/admin-orders-list.php:296
 msgid "Clear"
-msgstr ""
+msgstr "Очистить"
 
 #: views/admin-orders-list.php:158 views/admin-orders-list.php:195
 #: views/admin-orders-view.php:35
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: views/admin-orders-list.php:161 views/admin-orders-list.php:198
 #: views/admin-orders-view.php:41
 msgid "Event Name"
-msgstr ""
+msgstr "Название События"
 
 #: views/admin-orders-list.php:176 views/admin-orders-list.php:213
 msgid "Date"
-msgstr ""
+msgstr "Дата"
 
 #: views/admin-orders-list.php:179 views/admin-orders-list.php:216
 #: views/admin-orders-view.php:77
 msgid "Code"
-msgstr ""
+msgstr "Код"
 
 #: views/admin-orders-list.php:182 views/admin-orders-list.php:219
 msgid "Total price"
-msgstr ""
+msgstr "Общая цена"
 
 #: views/admin-orders-list.php:239 views/admin-schemes-list.php:71
 msgid "View this item"
-msgstr ""
+msgstr "Открыть этот элемент"
 
 #: views/admin-orders-list.php:239 views/admin-schemes-list.php:71
 msgid "View"
-msgstr ""
+msgstr "Смотреть"
 
 #: views/admin-orders-list.php:240 views/admin-schemes-list.php:73
 msgid "Delete this item"
-msgstr ""
+msgstr "Удалить этот элемент"
 
 #: views/admin-orders-list.php:280
 msgid "There are no orders yet."
-msgstr ""
+msgstr "Пока нет заказов."
 
 #: views/admin-orders-list.php:307
 msgid "Are you sure you want to clear this list?"
-msgstr ""
+msgstr "Вы уверены, что хотите очистить этот список?"
 
 #: views/admin-orders-view.php:7 views/admin-schemes-add.php:15
 #: views/admin-schemes-edit.php:9 views/admin-settings.php:68
 #: views/admin-settings.php:79
 msgid "Error."
-msgstr ""
+msgstr "Ошибка."
 
 #: views/admin-orders-view.php:9
 msgid "Order has been successfully updated."
-msgstr ""
+msgstr "Заказ был успешно обновлен."
 
 #: views/admin-orders-view.php:28
 msgid "Order details"
-msgstr ""
+msgstr "Данные для заказа"
 
 #: views/admin-orders-view.php:46
 msgid "Scheme Name"
-msgstr ""
+msgstr "Название Схемы"
 
 #: views/admin-orders-view.php:47
 msgid "Scheme not found"
-msgstr ""
+msgstr "Схема не найдена"
 
 #: views/admin-orders-view.php:98
 msgid "Places"
-msgstr ""
+msgstr "Места"
 
 #: views/admin-orders-view.php:107
 msgid "Admin notes"
-msgstr ""
+msgstr "Заметки Администратора"
 
 #: views/admin-orders-view.php:118
 #: views/includes/admin-settings-tab-email-templates.php:87
@@ -448,141 +450,143 @@ msgstr ""
 
 #: views/admin-schemes-add.php:13
 msgid "Scheme has been successfully added."
-msgstr ""
+msgstr "Схема успешно добавлена."
 
 #: views/admin-schemes-add.php:18 views/admin-schemes-edit.php:18
 msgid "All fields are required."
-msgstr ""
+msgstr "Все поля обязательны для заполнения."
 
 #: views/admin-schemes-add.php:22
 msgid "Add New Scheme"
-msgstr ""
+msgstr "Добавить Новую Схему"
 
 #: views/admin-schemes-delete.php:9
 msgid "Scheme has been successfully deleted."
-msgstr ""
+msgstr "Схема успешно удалена."
 
 #: views/admin-schemes-delete.php:13 views/admin-schemes-duplicate.php:14
 msgid "Scheme id is not specified."
-msgstr ""
+msgstr "ID схемы не указан."
 
 #: views/admin-schemes-duplicate.php:9
 msgid "Scheme has been successfully duplicated."
-msgstr ""
+msgstr "Схема была успешно продублирована."
 
 #: views/admin-schemes-edit.php:11
 msgid "Scheme has been successfully updated."
-msgstr ""
+msgstr "Схема была успешно обновлена"
 
 #: views/admin-schemes-edit.php:24
 msgid "Edit Scheme"
-msgstr ""
+msgstr "Редактировать Схему"
 
 #: views/admin-schemes-list.php:26 views/admin-schemes-list.php:47
 #: views/includes/admin-schemes-form.php:36
 msgid "Width"
-msgstr ""
+msgstr "Ширина"
 
 #: views/admin-schemes-list.php:29 views/admin-schemes-list.php:50
 #: views/includes/admin-schemes-form.php:40
 msgid "Height"
-msgstr ""
+msgstr "Высота"
 
 #: views/admin-schemes-list.php:70
 msgid "Edit this item"
-msgstr ""
+msgstr "Редактировать этот пункт"
 
 #: views/admin-schemes-list.php:72
 msgid "Duplicate this item"
-msgstr ""
+msgstr "Дублировать этот пункт"
 
 #: views/admin-schemes-list.php:72
 msgid "Duplicate"
-msgstr ""
+msgstr "Дублировать"
 
 #: views/admin-schemes-list.php:95
 msgid "There are no schemes yet."
-msgstr ""
+msgstr "Еще нет схем."
 
 #: views/admin-schemes-view.php:2
 msgid "All form fields are required."
-msgstr ""
+msgstr "Все поля формы обязательны для заполнения."
 
 #: views/admin-schemes-view.php:22
 msgid "Place status:"
-msgstr ""
+msgstr "Статус места:"
 
 #: views/admin-schemes-view.php:37
 msgid "Unset"
-msgstr ""
+msgstr "В исходное состояние"
 
 #: views/admin-schemes-view.php:38
 msgid "Change Status"
-msgstr ""
+msgstr "Изменить Статус"
 
 #: views/admin-settings.php:41 views/admin-settings.php:85
 msgid "Settings saved."
-msgstr ""
+msgstr "Настройки сохранены."
 
 #: views/admin-settings.php:108
 msgid "General"
-msgstr ""
+msgstr "Общий"
 
 #: views/admin-settings.php:109
 msgid "E-mail templates"
-msgstr ""
+msgstr "Шаблоны электронной почты"
 
 #: views/includes/admin-schemes-form.php:32
 msgid "Describe the event: mention the date, time and other important info."
-msgstr ""
+msgstr "Опишите событие: упомяните дату, время и другую важную информацию."
 
 #: views/includes/admin-schemes-form.php:37
 msgid "cells horizontally"
-msgstr ""
+msgstr "ячейки по-горизонтали"
 
 #: views/includes/admin-schemes-form.php:41
 msgid "cells vertically"
-msgstr ""
+msgstr "ячейки по-вертикали"
 
 #: views/includes/admin-settings-tab-email-templates.php:4
 msgid "New order admin template"
-msgstr ""
+msgstr "Шаблон нового заказа для администратора"
 
 #: views/includes/admin-settings-tab-email-templates.php:10
 #: views/includes/admin-settings-tab-email-templates.php:51
 msgid "Subject"
-msgstr ""
+msgstr "Тема"
 
 #: views/includes/admin-settings-tab-email-templates.php:17
 #: views/includes/admin-settings-tab-email-templates.php:58
 msgid "Message"
-msgstr ""
+msgstr "Сообщение"
 
 #: views/includes/admin-settings-tab-email-templates.php:22
 #: views/includes/admin-settings-tab-email-templates.php:63
 msgid "You can use the following keywords:"
-msgstr ""
+msgstr "Вы можете использовать следующие ключевые слова:"
 
 #: views/includes/admin-settings-tab-email-templates.php:45
 msgid "New order customer template"
-msgstr ""
+msgstr "Шаблон нового заказа для клиента"
 
 #: views/includes/admin-settings-tab-general.php:7
 msgid "E-mail Address"
-msgstr ""
+msgstr "Адрес Электронной почты"
 
 #: views/includes/admin-settings-tab-general.php:11
 msgid "This address is used for admin purposes, like new order notification."
 msgstr ""
+"Этот адрес используется для административных целей, таких как уведомление о "
+"новом заказе."
 
 #: views/includes/admin-settings-tab-general.php:16
 msgid "Cart Expiration Time"
-msgstr ""
+msgstr "Истечение Срока Корзины"
 
 #: views/includes/admin-settings-tab-general.php:18
 msgid "minutes"
-msgstr ""
+msgstr "минут"
 
 #: views/includes/admin-settings-tab-general.php:23
 msgid "Currency Symbol"
-msgstr ""
+msgstr "Знак Валюты"

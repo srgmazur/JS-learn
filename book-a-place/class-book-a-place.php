@@ -105,6 +105,7 @@ class Book_A_Place
         '21' => '&#8363;',
         '22' => '&#37;',
         '23' => '&#137;',
+		'24' => 'грн.',
     );
 
     private $success_user_messages = array();
@@ -118,11 +119,11 @@ class Book_A_Place
     private function __construct()
     {
         $this->place_statuses_labels = array(
-            '1' => __('Available', $this->plugin_slug),
-            '2' => __('Booked', $this->plugin_slug),
-            '3' => __('In cart', $this->plugin_slug),
-            '4' => __('In other\'s cart', $this->plugin_slug),
-            '5' => __('Unavailable', $this->plugin_slug),
+            '1' => __('Доступно', $this->plugin_slug),
+            '2' => __('Забронировано', $this->plugin_slug),
+            '3' => __('В корзине', $this->plugin_slug),
+            '4' => __('В чужой корзине', $this->plugin_slug),
+            '5' => __('Не доступно', $this->plugin_slug),
         );
 
         $this->order_statuses = array(
