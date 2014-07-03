@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Book a Place 0.4.2\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/plugins/plugin-name\n"
 "POT-Creation-Date: 2014-05-20 15:56+0200\n"
-"PO-Revision-Date: 2014-07-03 14:55+0200\n"
+"PO-Revision-Date: 2014-07-03 15:14+0200\n"
 "Last-Translator: Sergey Mazur <srgmazur@gmail.com>\n"
 "Language-Team: LANGUAGE <translations@example.com >\n"
 "Language: ru_RU\n"
@@ -103,7 +103,7 @@ msgstr "Корзина"
 
 #: class-book-a-place.php:1262
 msgid "The cart will be cleared in"
-msgstr "Корзина будет создана через"
+msgstr "Корзина будет очищена через"
 
 #: class-book-a-place.php:1268 views/admin-events.php:365
 #: views/admin-schemes-list.php:22 views/admin-schemes-list.php:43

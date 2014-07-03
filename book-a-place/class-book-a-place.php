@@ -1158,10 +1158,10 @@ Regards';
 
         $html .= '<h2>' . $scheme_details->name . '</h2>';
 
-        $html .= '<p>' . $scheme_details->description . '</p>';
-
+        //$html .= '<p>' . $scheme_details->description . '</p>';
+		$html .= '<h1>' . "С Ц Е Н А" . '</h1>';
         $html .= '<div id="scheme-container">';
-        $html .= $this->display_scheme_front($scheme);
+		$html .= $this->display_scheme_front($scheme);
         $html .= '</div>';
 
         $html .= '<div id="shopping-cart-container">';
