@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Book a Place 0.4.2\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/plugins/plugin-name\n"
 "POT-Creation-Date: 2014-05-20 15:56+0200\n"
-"PO-Revision-Date: 2014-07-03 18:03+0200\n"
+"PO-Revision-Date: 2014-07-07 12:15+0200\n"
 "Last-Translator: Sergey Mazur <srgmazur@gmail.com>\n"
 "Language-Team: LANGUAGE <translations@example.com >\n"
 "Language: ru_RU\n"
@@ -136,12 +136,12 @@ msgstr "Заказать"
 #: class-book-a-place.php:1313 views/admin-events.php:359
 #, php-format
 msgid "Fields with %s are required."
-msgstr "Поля с %s  обяхательны к заполнению"
+msgstr "Поля с %s  обязательны к заполнению"
 
 #: class-book-a-place.php:1319 views/admin-orders-list.php:164
 #: views/admin-orders-list.php:201 views/admin-orders-view.php:52
 msgid "First Name"
-msgstr "Имя"
+msgstr "ФИО"
 
 #: class-book-a-place.php:1323 views/admin-orders-list.php:167
 #: views/admin-orders-list.php:204 views/admin-orders-view.php:57

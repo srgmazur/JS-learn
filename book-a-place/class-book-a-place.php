@@ -1339,7 +1339,7 @@ Regards';
 				<option value="1">Доставка на дом</option>
 				<option value="2">Самовывоз из кассы</option>
 			</select>
-			<p class="input-notice">Доставка билетов по Харькову бесплатная</p>
+			<p>бесплатная доставка билетов по Харькову</p>
 			<input type="text" value="" name="checkout-delivery-help" id="checkout-delivery-help" placeholder="введите адрес доставки билетов">
             
             <select name="checkout-delivery-self" id="checkout-delivery-self">

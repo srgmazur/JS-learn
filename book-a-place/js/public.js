@@ -134,8 +134,8 @@
         $("#bap-cart-form-dialog").dialog({
             dialogClass: "bap-dialog",
             autoOpen: false,
-            height: 500,
-            width: 500,
+            height: 600,
+            width: 600,
             modal: true,
             buttons: bapCartFormDialogButtonsObj,
             draggable: false
