@@ -66,7 +66,7 @@ function wpmem_do_install()
 		update_option( 'wpmembers_fields', $wpmem_fields_options_arr, '', 'yes' ); // using update_option to allow for forced update
 		
 		$wpmem_dialogs_arr = array(
-			"This content is restricted to site members. If you are an existing user, please log in. New users may register below.",
+			"This content is restricted to site members.  If you are an existing user, please log in.  New users may register below.",
 			"Sorry, that username is taken, please try another.",
 			"Sorry, that email address already has an account.<br />Please try another.",
 			"Congratulations! Your registration was successful.<br /><br />You may now log in using the password that was emailed to you.",
